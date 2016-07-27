@@ -1,0 +1,47 @@
+.myBody {
+  text-align: center;
+  background-color: #071914;   
+}
+
+table {
+  width: 480px;
+  height: 480px;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.square{
+  width: 100px;
+  height: 100px;
+}
+
+.v{
+  border-left: 5px solid #FFFFFF;
+  border-right: 5px solid #FFFFFF;
+}
+
+.h{
+  border-top: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.fa {
+  color: #FFFF00;
+}
+
+.text-center {
+  margin: 5%;
+}
+
+.btn-modal {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fa-modal {
+  color: #FFFFFF;
+}
+
+  

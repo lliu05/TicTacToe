@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tic Tac Toe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.9/font-awesome-animation.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>  
+  <body class="myBody">
+    <div class="boss">
+      <table id="board">
+        <tr id="row1">
+          <td class="square fa-parent" id="00"></td>
+          <td class="square v" id="01"></td>
+          <td class="square" id="02"></td>
+        </tr>
+        <tr id="row2">
+          <td class="square h" id="10"></td>
+          <td class="square v h" id="11"></td>
+          <td class="square h" id="12"></td>
+        </tr>
+        <tr id="row3">
+          <td class="square" id="20"></td>
+          <td class="square v" id="21"></td>
+          <td class="square" id="22"></td>
+        </tr>
+      </table>
+    </div>
+  </body>  
+</html>
+<div class="modal fade" tabindex="-1" role="dialog" id="playerChoiceModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Let's play Tic-Tac-Toe!</h4>
+      </div>
+      <div class="modal-footer">
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg btn-modal" data-dismiss="modal" id="chooseCircle">
+            <i class="fa fa-circle-o fa-5x fa-modal" aria-hidden="true"></i>
+          </button>
+          <span> OR </span>
+          <button type="button" class="btn btn-warning btn-lg btn-modal" data-dismiss="modal" id="chooseCross">
+            <i class="fa fa-times fa-5x fa-modal" aria-hidden="true"></i>
+          </button>
+        </div>       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="replayModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Play again!</h4>
+      </div>
+      <div class="modal-footer">
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg btn-modal" data-dismiss="modal" id="replayChooseCircle">
+            <i class="fa fa-circle-o fa-5x fa-modal" aria-hidden="true"></i>
+          </button>
+          <span> OR </span>
+          <button type="button" class="btn btn-warning btn-lg btn-modal" data-dismiss="modal" id="replayChooseCross">
+            <i class="fa fa-times fa-5x fa-modal" aria-hidden="true"></i>
+          </button>
+        </div>       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>

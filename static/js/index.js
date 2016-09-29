@@ -148,7 +148,7 @@ $(document).ready(function(){
             var score = Math.min.apply(null, arrScores);
             var board = arrBoards[arrScores.indexOf(score)];
         }
-        if (minOrMax === "Max") {
+        else if (minOrMax === "Max") {
             var score = Math.max.apply(null, arrScores);
             var board = arrBoards[arrScores.indexOf(score)];
         }
@@ -216,7 +216,8 @@ $(document).ready(function(){
             return ["", ""];
         }
     }
-
+    
+    //Winner flash animation
     function winnerFlash(coordinate) {
         for (var i = 0; i < 3; i++) {
             var id = coordinate[i][0].toString() + coordinate[i][1].toString();

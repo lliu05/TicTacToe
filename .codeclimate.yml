@@ -1,8 +1,29 @@
+---
 engines:
-  # ... CONFIG CONTENT ...
+  csslint:
+    enabled: true
   duplication:
     enabled: true
-    # ... CONFIG CONTENT ...
+    config:
+      languages:
+      - ruby
+      - javascript
+      - python
+      - php
     exclude_fingerprints:
     - 12192fda05c4bbfffe93f26fd4bf1710
-  # ... CONFIG CONTENT ...
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.css"
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+  - "**.rb"
+exclude_paths: []

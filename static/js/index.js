@@ -120,24 +120,25 @@ $(document).ready(function(){
         var arrBoards = [];
         var arrToPlay = freeToPlay(nowBoard);
         for (var k = 0; k < arrToPlay.length; k++) {
-            var nextBoard = deepCopy(nowBoard);
+            var nextBoard = deepCopy(nowBoard),
+                scoreAndBoard;
             if (turn === "X") {
                 nextBoard[arrToPlay[k][0]][arrToPlay[k][1]] = "X";
+                if (minOrMax === "Min") {
+                    scoreAndBoard = miniMax(nextBoard, computerPlayer, "O", "Max");
+                }
+                else if (minOrMax === "Max") {
+                    scoreAndBoard = miniMax(nextBoard, computerPlayer, "O", "Min");
+                }
             }
             else if (turn === "O") {
                 nextBoard[arrToPlay[k][0]][arrToPlay[k][1]] = "O";
-            }
-            if (turn === "X" && minOrMax === "Min") {
-                var scoreAndBoard = miniMax(nextBoard, computerPlayer, "O", "Max");
-            }
-            if (turn === "X" && minOrMax === "Max") {
-                var scoreAndBoard = miniMax(nextBoard, computerPlayer, "O", "Min");
-            }
-            if (turn === "O" && minOrMax === "Min") {
-                var scoreAndBoard = miniMax(nextBoard, computerPlayer, "X", "Max");
-            }
-            if (turn === "O" && minOrMax === "Max") {
-                var scoreAndBoard = miniMax(nextBoard, computerPlayer, "X", "Min");
+                if (minOrMax === "Min") {
+                    scoreAndBoard = miniMax(nextBoard, computerPlayer, "X", "Max");
+                }
+                else if (minOrMax === "Max") {
+                    scoreAndBoard = miniMax(nextBoard, computerPlayer, "X", "Min");
+                }
             }
             arrScores.push(scoreAndBoard[0]);
             arrBoards.push(nextBoard);

@@ -6,4 +6,4 @@ User Story: My game will reset as soon as it's over so I can play again.
 
 User Story: I can choose whether I want to play as X or O.
 
-View Demo on Codepen: http://codepen.io/lliu05/full/qZQbxY/
+View Demo on Heroku: https://luna-tic-tac-toe.herokuapp.com/

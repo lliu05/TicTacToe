@@ -1,0 +1,22 @@
+{
+  "name": "TicTacToe",
+  "version": "0.0.0",
+  "description": "User Story: I can play a game of Tic Tac Toe with the computer.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lliu05/TicTacToe.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lliu05/TicTacToe/issues"
+  },
+  "dependencies": {
+    "express": "~4.14.0"
+  },
+  "devDependencies": {}
+}

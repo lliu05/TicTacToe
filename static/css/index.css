@@ -29,14 +29,11 @@ table {
 
 .fa {
   color: #FFFF00;
+  margin-left: 30%;
 }
 
 .text-center {
   margin: 5%;
-}
-
-.text-right {
-  margin-right: 0;
 }
 
 .btn-modal {
@@ -46,6 +43,8 @@ table {
 
 .fa-modal {
   color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
 }
 
   
